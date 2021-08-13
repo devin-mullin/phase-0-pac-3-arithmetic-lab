@@ -22,9 +22,17 @@ function decrement(n) {
     return --n
 }
 
-parseInt (22.22, 10)
+function makeInt(string, n) {
+    console.log(parseInt(string, n))
+}
 
-parseFloat (80.123999)
+function preserveDecimal(string) {
+    console.log(parseFloat(string))
+}
+
+console.log(makeInt('22.22', 10))
+
+console.log(preserveDecimal("22.22"))
 
 console.log(increment(3))
 
